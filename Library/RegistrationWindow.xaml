@@ -1,0 +1,39 @@
+﻿<Window x:Class="Library.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Регистрация" Height="650" Width="400"
+        WindowStartupLocation="CenterScreen" Background="#800000" Closing="Window_Closing">
+
+    <Grid Margin="20">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Регистрация" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20" Style="{StaticResource AccentTextBlockStyle}"/>
+
+            <TextBlock Text="Имя:" Style="{StaticResource WhiteTextBlockStyle}"/>
+            <TextBox x:Name="NameTextBox" Width="250" />
+
+            <TextBlock Text="Логин:" Style="{StaticResource WhiteTextBlockStyle}"/>
+            <TextBox x:Name="LoginTextBox" Width="250" />
+
+            <TextBlock Text="Email:" Style="{StaticResource WhiteTextBlockStyle}"/>
+            <TextBox x:Name="EmailTextBox" Width="250" />
+
+            <TextBlock Text="Пароль:" Style="{StaticResource WhiteTextBlockStyle}"/>
+            <PasswordBox x:Name="PasswordBox" Width="250" />
+
+            <TextBlock Text="Повторите пароль:" Style="{StaticResource WhiteTextBlockStyle}"/>
+            <PasswordBox x:Name="RepeatPasswordBox" Width="250" />
+
+            <TextBlock Text="Фото профиля:" Style="{StaticResource WhiteTextBlockStyle}"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Ellipse Width="80" Height="80" Stroke="Gray" StrokeThickness="1" Margin="0,0,10,0">
+                    <Ellipse.Fill>
+                        <ImageBrush x:Name="ProfileImageBrush" Stretch="Uniform" />
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Button Content="Выбрать фото" Click="ChoosePhotoButton_Click" VerticalAlignment="Center" />
+            </StackPanel>
+
+            <Button Content="Зарегистрироваться" Click="RegisterButton_Click" Width="250" />
+        </StackPanel>
+    </Grid>
+</Window>

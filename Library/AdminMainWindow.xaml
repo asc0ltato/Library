@@ -1,0 +1,129 @@
+﻿<Window x:Class="Library.AdminMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Панель администратора" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen" Background="#800000">
+
+    <Grid Margin="10">
+        <Border CornerRadius="10" Background="White" Padding="10">
+            <TabControl FontFamily="{StaticResource MontserratFontFamily}" FontSize="16" Foreground="Black" SelectionChanged="TabControl_SelectionChanged">
+                <!-- Tab for viewing books -->
+                <TabItem Header="Управление книгами">
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Filters and sorting -->
+                        <WrapPanel Orientation="Horizontal" Margin="0,0,0,10" VerticalAlignment="Top">
+                            <TextBlock Text="Фильтр по автору:" VerticalAlignment="Center" Margin="0,0,5,0" Foreground="Black" />
+                            <ComboBox x:Name="AuthorFilterComboBox" Width="150" Margin="0,0,10,0" />
+
+                            <TextBlock Text="Фильтр по жанру:" VerticalAlignment="Center" Margin="0,0,5,0" Foreground="Black" />
+                            <ComboBox x:Name="GenreFilterComboBox" Width="150" Margin="0,0,10,0" />
+
+                            <TextBlock Text="Поиск по названию:" VerticalAlignment="Center" Margin="0,0,5,0" Foreground="Black" />
+                            <TextBox x:Name="TitleSearchTextBox" Height="25" Width="200" Margin="0,0,10,0" />
+
+                            <Button Content="Применить" Click="ApplyFiltersButton_Click" Width="130" />
+                        </WrapPanel>
+
+                        <!-- Books table -->
+                        <DataGrid x:Name="BooksDataGrid" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False"
+                                  IsReadOnly="True" Margin="0,10,0,0" FontFamily="{StaticResource MontserratFontFamily}" FontSize="14" 
+                                  GridLinesVisibility="Horizontal" RowBackground="#F9F9F9" AlternatingRowBackground="#EFEFEF" Foreground="Black">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Название" Binding="{Binding Name}" Width="2*" />
+                                <DataGridTextColumn Header="Год" Binding="{Binding Year}" Width="*" />
+                                <DataGridTextColumn Header="Авторы" Binding="{Binding Authors}" Width="2*" />
+                                <DataGridTextColumn Header="Жанры" Binding="{Binding Genres}" Width="2*" />
+                                <DataGridTextColumn Header="Фотография" Binding="{Binding Image}" Width="2*" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Управление пользователями">
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <!-- Для кнопки -->
+                            <RowDefinition Height="*" />
+                            <!-- Для DataGrid -->
+                        </Grid.RowDefinitions>
+
+                        <!-- Кнопка добавления нового пользователя -->
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10" Grid.Row="0">
+                            <Button Content="Добавить пользователя" Width="230" Height="30" Click="AddUserButton_Click" />
+                        </StackPanel>
+
+                        <!-- Таблица пользователей -->
+                        <DataGrid x:Name="UsersDataGrid" AutoGenerateColumns="False" CanUserAddRows="False"
+                          IsReadOnly="True" SelectionMode="Single" SelectionUnit="FullRow"
+                          Margin="0,10,0,0" FontFamily="{StaticResource MontserratFontFamily}" 
+                          FontSize="14" GridLinesVisibility="Horizontal" RowBackground="#F9F9F9" 
+                          AlternatingRowBackground="#EFEFEF" Foreground="Black" IsSynchronizedWithCurrentItem="False"
+                          Grid.Row="1"> 
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Имя" Binding="{Binding Name}" Width="1.3*">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="TextWrapping" Value="Wrap" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Логин" Binding="{Binding Login}" Width="0.9*">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="TextWrapping" Value="Wrap" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="1.3*">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="TextWrapping" Value="Wrap" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTemplateColumn Header="Фото" Width="0.9*">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Ellipse Width="50" Height="50" Stroke="Gray" StrokeThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="{Binding ProfilePhoto}" Stretch="Uniform" />
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTextColumn Header="Дата" Binding="{Binding DateCreate}" Width="*" />
+                                <DataGridTemplateColumn Header="Действия" Width="1.4*">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="Изменить" Click="EditUserButton_Click" Tag="{Binding Id}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTemplateColumn Header="Удалить" Width="1.4*">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="Удалить" Click="DeleteUserButton_Click" Tag="{Binding Id}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="Выйти">
+                    <Grid>
+                        <Button Content="Выйти из системы" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                Width="200" Height="50" Click="LogoutButton_Click" />
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Border>
+    </Grid>
+</Window>

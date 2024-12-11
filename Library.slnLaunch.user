@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Новый профиль",
+    "Projects": [
+      {
+        "Path": "Library\\Library.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "WCFService\\WCFService.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

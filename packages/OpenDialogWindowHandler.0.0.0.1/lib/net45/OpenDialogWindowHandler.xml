@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OpenDialogWindowHandler</name>
+    </assembly>
+    <members>
+        <member name="T:OpenDialogWindowHandler.DialogWindowController">
+            <summary>
+            Returns the Dialog window handle
+            </summary>
+        </member>
+        <member name="M:OpenDialogWindowHandler.IntPtrExtension.CatchControl(System.IntPtr,System.String,System.Int32,System.Int32)">
+            <summary>
+            Handles Dialog Window objects
+            </summary>
+        </member>
+        <member name="M:OpenDialogWindowHandler.IntPtrExtension.Send(System.IntPtr,System.Int32,System.String)">
+            <summary>
+            Returns the handle of the object
+            </summary>
+        </member>
+        <member name="M:OpenDialogWindowHandler.IntPtrExtension.SetForeground(System.IntPtr)">
+            <summary>
+            Keeps the Dialog window focused
+            </summary>
+        </member>
+        <member name="M:OpenDialogWindowHandler.IntPtrExtension.SendKeys(System.IntPtr,System.String)">
+            <summary>
+            Inputs Text on to a Dialog window when focused
+            </summary>
+        </member>
+        <member name="T:OpenDialogWindowHandler.HandleOpenDialog">
+            <summary>
+            Browser File Open Dialog window handler
+            </summary>
+        </member>
+        <member name="M:OpenDialogWindowHandler.HandleOpenDialog.fileOpenDialog(System.String,System.String)">
+            <summary>
+            Handles File Open Dialog window
+            </summary>
+            <param name="filepath">Full folder path where the file exist</param>
+            <param name="filename">File name that needs to be opened in the dialog</param>
+        </member>
+    </members>
+</doc>
