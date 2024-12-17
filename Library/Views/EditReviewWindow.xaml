@@ -1,0 +1,27 @@
+﻿<Window x:Class="Library.Views.EditReviewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редактировать отзыв" Height="500" Width="400" WindowStartupLocation="CenterScreen" MinWidth="400" MinHeight="500">
+    <Window.Background>
+        <ImageBrush ImageSource="/Resources/Images/background.jpg" Stretch="UniformToFill" />
+    </Window.Background>
+    <Grid Margin="20">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Редактирование отзыва" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20" Style="{StaticResource AccentTextBlockStyle}"/>
+
+            <TextBlock Text="Отзыв:" Style="{StaticResource WhiteTextBlockStyle}" Margin="0,0,0,7"/>
+            <TextBox x:Name="ReviewTextBox" Width="250" Height="100" TextWrapping="Wrap" AcceptsReturn="True" Margin="-65,0,0,15"/>
+
+            <TextBlock Text="Оценка:" Style="{StaticResource WhiteTextBlockStyle}" Margin="0,0,0,7"/>
+            <ComboBox x:Name="RatingComboBox" Width="150" Margin="-165,0,0,15" Style="{StaticResource RoundedComboBoxStyle}">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+                <ComboBoxItem Content="4" />
+                <ComboBoxItem Content="5" />
+            </ComboBox>
+
+            <Button Style="{StaticResource RoundedButtonStyle}" Content="Сохранить" Click="SaveReviewButton_Click" Width="180" Height="40" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

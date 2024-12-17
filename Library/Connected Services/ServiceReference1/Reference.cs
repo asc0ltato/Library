@@ -29,10 +29,22 @@ namespace Library.ServiceReference1 {
         private string[] GenresField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ImageField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string NameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool PresenceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int SampleCountField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int SampleIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int YearField;
@@ -74,6 +86,19 @@ namespace Library.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string Image {
             get {
                 return this.ImageField;
@@ -100,6 +125,45 @@ namespace Library.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool Presence {
+            get {
+                return this.PresenceField;
+            }
+            set {
+                if ((this.PresenceField.Equals(value) != true)) {
+                    this.PresenceField = value;
+                    this.RaisePropertyChanged("Presence");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int SampleCount {
+            get {
+                return this.SampleCountField;
+            }
+            set {
+                if ((this.SampleCountField.Equals(value) != true)) {
+                    this.SampleCountField = value;
+                    this.RaisePropertyChanged("SampleCount");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int SampleId {
+            get {
+                return this.SampleIdField;
+            }
+            set {
+                if ((this.SampleIdField.Equals(value) != true)) {
+                    this.SampleIdField = value;
+                    this.RaisePropertyChanged("SampleId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public int Year {
             get {
                 return this.YearField;
@@ -108,6 +172,131 @@ namespace Library.ServiceReference1 {
                 if ((this.YearField.Equals(value) != true)) {
                     this.YearField = value;
                     this.RaisePropertyChanged("Year");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="UserDTO", Namespace="http://schemas.datacontract.org/2004/07/WCFService.DTO")]
+    [System.SerializableAttribute()]
+    public partial class UserDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime DateCreateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ImageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LoginField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime DateCreate {
+            get {
+                return this.DateCreateField;
+            }
+            set {
+                if ((this.DateCreateField.Equals(value) != true)) {
+                    this.DateCreateField = value;
+                    this.RaisePropertyChanged("DateCreate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Email {
+            get {
+                return this.EmailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
+                    this.EmailField = value;
+                    this.RaisePropertyChanged("Email");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Image {
+            get {
+                return this.ImageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ImageField, value) != true)) {
+                    this.ImageField = value;
+                    this.RaisePropertyChanged("Image");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Login {
+            get {
+                return this.LoginField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LoginField, value) != true)) {
+                    this.LoginField = value;
+                    this.RaisePropertyChanged("Login");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
                 }
             }
         }
@@ -398,6 +587,12 @@ namespace Library.ServiceReference1 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> DateReturnField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime DateTakenField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int IdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -419,6 +614,32 @@ namespace Library.ServiceReference1 {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> DateReturn {
+            get {
+                return this.DateReturnField;
+            }
+            set {
+                if ((this.DateReturnField.Equals(value) != true)) {
+                    this.DateReturnField = value;
+                    this.RaisePropertyChanged("DateReturn");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime DateTaken {
+            get {
+                return this.DateTakenField;
+            }
+            set {
+                if ((this.DateTakenField.Equals(value) != true)) {
+                    this.DateTakenField = value;
+                    this.RaisePropertyChanged("DateTaken");
+                }
             }
         }
         
@@ -513,9 +734,6 @@ namespace Library.ServiceReference1 {
         private int BookIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescriptionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int IdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -556,19 +774,6 @@ namespace Library.ServiceReference1 {
                 if ((this.BookIdField.Equals(value) != true)) {
                     this.BookIdField = value;
                     this.RaisePropertyChanged("BookId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Description {
-            get {
-                return this.DescriptionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
-                    this.DescriptionField = value;
-                    this.RaisePropertyChanged("Description");
                 }
             }
         }
@@ -648,6 +853,9 @@ namespace Library.ServiceReference1 {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private Library.ServiceReference1.Review[] ReviewsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Library.ServiceReference1.Sample[] SamplesField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int YearField;
@@ -741,6 +949,19 @@ namespace Library.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public Library.ServiceReference1.Sample[] Samples {
+            get {
+                return this.SamplesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SamplesField, value) != true)) {
+                    this.SamplesField = value;
+                    this.RaisePropertyChanged("Samples");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public int Year {
             get {
                 return this.YearField;
@@ -783,9 +1004,6 @@ namespace Library.ServiceReference1 {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int BookIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -849,19 +1067,6 @@ namespace Library.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -892,9 +1097,6 @@ namespace Library.ServiceReference1 {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int GenreIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -954,19 +1156,6 @@ namespace Library.ServiceReference1 {
                 if ((this.GenreIdField.Equals(value) != true)) {
                     this.GenreIdField = value;
                     this.RaisePropertyChanged("GenreId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
                 }
             }
         }
@@ -1294,30 +1483,30 @@ namespace Library.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="UserDTO", Namespace="http://schemas.datacontract.org/2004/07/WCFService.DTO")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="TakenBookDTO", Namespace="http://schemas.datacontract.org/2004/07/WCFService.DTO")]
     [System.SerializableAttribute()]
-    public partial class UserDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class TakenBookDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime DateCreateField;
+        private string BookNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string EmailField;
+        private System.Nullable<System.DateTime> DateReturnField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
+        private System.DateTime DateTakenField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ImageField;
+        private int SampleIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string LoginField;
+        private string UserNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
+        private int YearField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -1330,27 +1519,184 @@ namespace Library.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime DateCreate {
+        public string BookName {
             get {
-                return this.DateCreateField;
+                return this.BookNameField;
             }
             set {
-                if ((this.DateCreateField.Equals(value) != true)) {
-                    this.DateCreateField = value;
-                    this.RaisePropertyChanged("DateCreate");
+                if ((object.ReferenceEquals(this.BookNameField, value) != true)) {
+                    this.BookNameField = value;
+                    this.RaisePropertyChanged("BookName");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Email {
+        public System.Nullable<System.DateTime> DateReturn {
             get {
-                return this.EmailField;
+                return this.DateReturnField;
             }
             set {
-                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
-                    this.EmailField = value;
-                    this.RaisePropertyChanged("Email");
+                if ((this.DateReturnField.Equals(value) != true)) {
+                    this.DateReturnField = value;
+                    this.RaisePropertyChanged("DateReturn");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime DateTaken {
+            get {
+                return this.DateTakenField;
+            }
+            set {
+                if ((this.DateTakenField.Equals(value) != true)) {
+                    this.DateTakenField = value;
+                    this.RaisePropertyChanged("DateTaken");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int SampleId {
+            get {
+                return this.SampleIdField;
+            }
+            set {
+                if ((this.SampleIdField.Equals(value) != true)) {
+                    this.SampleIdField = value;
+                    this.RaisePropertyChanged("SampleId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string UserName {
+            get {
+                return this.UserNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UserNameField, value) != true)) {
+                    this.UserNameField = value;
+                    this.RaisePropertyChanged("UserName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Year {
+            get {
+                return this.YearField;
+            }
+            set {
+                if ((this.YearField.Equals(value) != true)) {
+                    this.YearField = value;
+                    this.RaisePropertyChanged("Year");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ReviewDTO", Namespace="http://schemas.datacontract.org/2004/07/WCFService.DTO")]
+    [System.SerializableAttribute()]
+    public partial class ReviewDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BookNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool CanEditField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ContentField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime DateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int RatingField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int UserIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UserNameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BookName {
+            get {
+                return this.BookNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BookNameField, value) != true)) {
+                    this.BookNameField = value;
+                    this.RaisePropertyChanged("BookName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool CanEdit {
+            get {
+                return this.CanEditField;
+            }
+            set {
+                if ((this.CanEditField.Equals(value) != true)) {
+                    this.CanEditField = value;
+                    this.RaisePropertyChanged("CanEdit");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Content {
+            get {
+                return this.ContentField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ContentField, value) != true)) {
+                    this.ContentField = value;
+                    this.RaisePropertyChanged("Content");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Date {
+            get {
+                return this.DateField;
+            }
+            set {
+                if ((this.DateField.Equals(value) != true)) {
+                    this.DateField = value;
+                    this.RaisePropertyChanged("Date");
                 }
             }
         }
@@ -1369,40 +1715,40 @@ namespace Library.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Image {
+        public int Rating {
             get {
-                return this.ImageField;
+                return this.RatingField;
             }
             set {
-                if ((object.ReferenceEquals(this.ImageField, value) != true)) {
-                    this.ImageField = value;
-                    this.RaisePropertyChanged("Image");
+                if ((this.RatingField.Equals(value) != true)) {
+                    this.RatingField = value;
+                    this.RaisePropertyChanged("Rating");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Login {
+        public int UserId {
             get {
-                return this.LoginField;
+                return this.UserIdField;
             }
             set {
-                if ((object.ReferenceEquals(this.LoginField, value) != true)) {
-                    this.LoginField = value;
-                    this.RaisePropertyChanged("Login");
+                if ((this.UserIdField.Equals(value) != true)) {
+                    this.UserIdField = value;
+                    this.RaisePropertyChanged("UserId");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
+        public string UserName {
             get {
-                return this.NameField;
+                return this.UserNameField;
             }
             set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
+                if ((object.ReferenceEquals(this.UserNameField, value) != true)) {
+                    this.UserNameField = value;
+                    this.RaisePropertyChanged("UserName");
                 }
             }
         }
@@ -1427,11 +1773,23 @@ namespace Library.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/RegisterUser", ReplyAction="http://tempuri.org/IService1/RegisterUserResponse")]
         System.Threading.Tasks.Task<string> RegisterUserAsync(string name, string login, string email, string password, byte[] profilePhoto);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUserIdByLoginOrEmail", ReplyAction="http://tempuri.org/IService1/GetUserIdByLoginOrEmailResponse")]
+        int GetUserIdByLoginOrEmail(string loginOrEmail);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUserIdByLoginOrEmail", ReplyAction="http://tempuri.org/IService1/GetUserIdByLoginOrEmailResponse")]
+        System.Threading.Tasks.Task<int> GetUserIdByLoginOrEmailAsync(string loginOrEmail);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/LoginUser", ReplyAction="http://tempuri.org/IService1/LoginUserResponse")]
         string LoginUser(string loginOrEmail, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/LoginUser", ReplyAction="http://tempuri.org/IService1/LoginUserResponse")]
         System.Threading.Tasks.Task<string> LoginUserAsync(string loginOrEmail, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetGenres", ReplyAction="http://tempuri.org/IService1/GetGenresResponse")]
+        string[] GetGenres();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetGenres", ReplyAction="http://tempuri.org/IService1/GetGenresResponse")]
+        System.Threading.Tasks.Task<string[]> GetGenresAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetBooks", ReplyAction="http://tempuri.org/IService1/GetBooksResponse")]
         Library.ServiceReference1.BookDTO[] GetBooks(string authorName, string genreName, string title);
@@ -1439,23 +1797,35 @@ namespace Library.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetBooks", ReplyAction="http://tempuri.org/IService1/GetBooksResponse")]
         System.Threading.Tasks.Task<Library.ServiceReference1.BookDTO[]> GetBooksAsync(string authorName, string genreName, string title);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUserInfo", ReplyAction="http://tempuri.org/IService1/GetUserInfoResponse")]
-        Library.ServiceReference1.Users GetUserInfo(int userId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllBooks", ReplyAction="http://tempuri.org/IService1/GetAllBooksResponse")]
+        Library.ServiceReference1.BookDTO[] GetAllBooks();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUserInfo", ReplyAction="http://tempuri.org/IService1/GetUserInfoResponse")]
-        System.Threading.Tasks.Task<Library.ServiceReference1.Users> GetUserInfoAsync(int userId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllBooks", ReplyAction="http://tempuri.org/IService1/GetAllBooksResponse")]
+        System.Threading.Tasks.Task<Library.ServiceReference1.BookDTO[]> GetAllBooksAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUserIdByLoginOrEmail", ReplyAction="http://tempuri.org/IService1/GetUserIdByLoginOrEmailResponse")]
-        int GetUserIdByLoginOrEmail(string loginOrEmail);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddBook", ReplyAction="http://tempuri.org/IService1/AddBookResponse")]
+        void AddBook(Library.ServiceReference1.BookDTO book);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUserIdByLoginOrEmail", ReplyAction="http://tempuri.org/IService1/GetUserIdByLoginOrEmailResponse")]
-        System.Threading.Tasks.Task<int> GetUserIdByLoginOrEmailAsync(string loginOrEmail);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddBook", ReplyAction="http://tempuri.org/IService1/AddBookResponse")]
+        System.Threading.Tasks.Task AddBookAsync(Library.ServiceReference1.BookDTO book);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateUser", ReplyAction="http://tempuri.org/IService1/UpdateUserResponse")]
-        void UpdateUser(int userId, string name, string login, string email, string password, byte[] photo);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateBook", ReplyAction="http://tempuri.org/IService1/UpdateBookResponse")]
+        void UpdateBook(Library.ServiceReference1.BookDTO bookDto);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateUser", ReplyAction="http://tempuri.org/IService1/UpdateUserResponse")]
-        System.Threading.Tasks.Task UpdateUserAsync(int userId, string name, string login, string email, string password, byte[] photo);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateBook", ReplyAction="http://tempuri.org/IService1/UpdateBookResponse")]
+        System.Threading.Tasks.Task UpdateBookAsync(Library.ServiceReference1.BookDTO bookDto);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteBook", ReplyAction="http://tempuri.org/IService1/DeleteBookResponse")]
+        string DeleteBook(int bookId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteBook", ReplyAction="http://tempuri.org/IService1/DeleteBookResponse")]
+        System.Threading.Tasks.Task<string> DeleteBookAsync(int bookId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetBookById", ReplyAction="http://tempuri.org/IService1/GetBookByIdResponse")]
+        Library.ServiceReference1.BookDTO GetBookById(int bookId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetBookById", ReplyAction="http://tempuri.org/IService1/GetBookByIdResponse")]
+        System.Threading.Tasks.Task<Library.ServiceReference1.BookDTO> GetBookByIdAsync(int bookId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUsers", ReplyAction="http://tempuri.org/IService1/GetUsersResponse")]
         Library.ServiceReference1.UserDTO[] GetUsers();
@@ -1463,11 +1833,95 @@ namespace Library.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUsers", ReplyAction="http://tempuri.org/IService1/GetUsersResponse")]
         System.Threading.Tasks.Task<Library.ServiceReference1.UserDTO[]> GetUsersAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteUser", ReplyAction="http://tempuri.org/IService1/DeleteUserResponse")]
-        void DeleteUser(int userId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUserInfo", ReplyAction="http://tempuri.org/IService1/GetUserInfoResponse")]
+        Library.ServiceReference1.Users GetUserInfo(int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUserInfo", ReplyAction="http://tempuri.org/IService1/GetUserInfoResponse")]
+        System.Threading.Tasks.Task<Library.ServiceReference1.Users> GetUserInfoAsync(int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateUser", ReplyAction="http://tempuri.org/IService1/UpdateUserResponse")]
+        void UpdateUser(int userId, string name, string login, string email, string password, byte[] photo);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateUser", ReplyAction="http://tempuri.org/IService1/UpdateUserResponse")]
+        System.Threading.Tasks.Task UpdateUserAsync(int userId, string name, string login, string email, string password, byte[] photo);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteUser", ReplyAction="http://tempuri.org/IService1/DeleteUserResponse")]
-        System.Threading.Tasks.Task DeleteUserAsync(int userId);
+        string DeleteUser(int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteUser", ReplyAction="http://tempuri.org/IService1/DeleteUserResponse")]
+        System.Threading.Tasks.Task<string> DeleteUserAsync(int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetTakenBooksByUserId", ReplyAction="http://tempuri.org/IService1/GetTakenBooksByUserIdResponse")]
+        Library.ServiceReference1.TakenBookDTO[] GetTakenBooksByUserId(int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetTakenBooksByUserId", ReplyAction="http://tempuri.org/IService1/GetTakenBooksByUserIdResponse")]
+        System.Threading.Tasks.Task<Library.ServiceReference1.TakenBookDTO[]> GetTakenBooksByUserIdAsync(int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllTakenBooks", ReplyAction="http://tempuri.org/IService1/GetAllTakenBooksResponse")]
+        Library.ServiceReference1.TakenBookDTO[] GetAllTakenBooks();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllTakenBooks", ReplyAction="http://tempuri.org/IService1/GetAllTakenBooksResponse")]
+        System.Threading.Tasks.Task<Library.ServiceReference1.TakenBookDTO[]> GetAllTakenBooksAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TakeBook", ReplyAction="http://tempuri.org/IService1/TakeBookResponse")]
+        string TakeBook(int userId, int bookId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TakeBook", ReplyAction="http://tempuri.org/IService1/TakeBookResponse")]
+        System.Threading.Tasks.Task<string> TakeBookAsync(int userId, int bookId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ReturnBook", ReplyAction="http://tempuri.org/IService1/ReturnBookResponse")]
+        string ReturnBook(int userId, int sampleId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ReturnBook", ReplyAction="http://tempuri.org/IService1/ReturnBookResponse")]
+        System.Threading.Tasks.Task<string> ReturnBookAsync(int userId, int sampleId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/HasUserTakenBook", ReplyAction="http://tempuri.org/IService1/HasUserTakenBookResponse")]
+        bool HasUserTakenBook(int userId, int sampleId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/HasUserTakenBook", ReplyAction="http://tempuri.org/IService1/HasUserTakenBookResponse")]
+        System.Threading.Tasks.Task<bool> HasUserTakenBookAsync(int userId, int sampleId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllReviews", ReplyAction="http://tempuri.org/IService1/GetAllReviewsResponse")]
+        Library.ServiceReference1.ReviewDTO[] GetAllReviews(int currentUserId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllReviews", ReplyAction="http://tempuri.org/IService1/GetAllReviewsResponse")]
+        System.Threading.Tasks.Task<Library.ServiceReference1.ReviewDTO[]> GetAllReviewsAsync(int currentUserId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetReviews", ReplyAction="http://tempuri.org/IService1/GetReviewsResponse")]
+        Library.ServiceReference1.ReviewDTO[] GetReviews();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetReviews", ReplyAction="http://tempuri.org/IService1/GetReviewsResponse")]
+        System.Threading.Tasks.Task<Library.ServiceReference1.ReviewDTO[]> GetReviewsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetReviewById", ReplyAction="http://tempuri.org/IService1/GetReviewByIdResponse")]
+        Library.ServiceReference1.ReviewDTO GetReviewById(int reviewId, int _currentUserId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetReviewById", ReplyAction="http://tempuri.org/IService1/GetReviewByIdResponse")]
+        System.Threading.Tasks.Task<Library.ServiceReference1.ReviewDTO> GetReviewByIdAsync(int reviewId, int _currentUserId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddBookReview", ReplyAction="http://tempuri.org/IService1/AddBookReviewResponse")]
+        string AddBookReview(int userId, int bookId, string review, int rating);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddBookReview", ReplyAction="http://tempuri.org/IService1/AddBookReviewResponse")]
+        System.Threading.Tasks.Task<string> AddBookReviewAsync(int userId, int bookId, string review, int rating);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateReview", ReplyAction="http://tempuri.org/IService1/UpdateReviewResponse")]
+        void UpdateReview(int reviewId, string content, int rating);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateReview", ReplyAction="http://tempuri.org/IService1/UpdateReviewResponse")]
+        System.Threading.Tasks.Task UpdateReviewAsync(int reviewId, string content, int rating);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteReview", ReplyAction="http://tempuri.org/IService1/DeleteReviewResponse")]
+        void DeleteReview(int reviewId, int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteReview", ReplyAction="http://tempuri.org/IService1/DeleteReviewResponse")]
+        System.Threading.Tasks.Task DeleteReviewAsync(int reviewId, int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AdminDeleteReview", ReplyAction="http://tempuri.org/IService1/AdminDeleteReviewResponse")]
+        void AdminDeleteReview(int reviewId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AdminDeleteReview", ReplyAction="http://tempuri.org/IService1/AdminDeleteReviewResponse")]
+        System.Threading.Tasks.Task AdminDeleteReviewAsync(int reviewId);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1505,12 +1959,28 @@ namespace Library.ServiceReference1 {
             return base.Channel.RegisterUserAsync(name, login, email, password, profilePhoto);
         }
         
+        public int GetUserIdByLoginOrEmail(string loginOrEmail) {
+            return base.Channel.GetUserIdByLoginOrEmail(loginOrEmail);
+        }
+        
+        public System.Threading.Tasks.Task<int> GetUserIdByLoginOrEmailAsync(string loginOrEmail) {
+            return base.Channel.GetUserIdByLoginOrEmailAsync(loginOrEmail);
+        }
+        
         public string LoginUser(string loginOrEmail, string password) {
             return base.Channel.LoginUser(loginOrEmail, password);
         }
         
         public System.Threading.Tasks.Task<string> LoginUserAsync(string loginOrEmail, string password) {
             return base.Channel.LoginUserAsync(loginOrEmail, password);
+        }
+        
+        public string[] GetGenres() {
+            return base.Channel.GetGenres();
+        }
+        
+        public System.Threading.Tasks.Task<string[]> GetGenresAsync() {
+            return base.Channel.GetGenresAsync();
         }
         
         public Library.ServiceReference1.BookDTO[] GetBooks(string authorName, string genreName, string title) {
@@ -1521,28 +1991,44 @@ namespace Library.ServiceReference1 {
             return base.Channel.GetBooksAsync(authorName, genreName, title);
         }
         
-        public Library.ServiceReference1.Users GetUserInfo(int userId) {
-            return base.Channel.GetUserInfo(userId);
+        public Library.ServiceReference1.BookDTO[] GetAllBooks() {
+            return base.Channel.GetAllBooks();
         }
         
-        public System.Threading.Tasks.Task<Library.ServiceReference1.Users> GetUserInfoAsync(int userId) {
-            return base.Channel.GetUserInfoAsync(userId);
+        public System.Threading.Tasks.Task<Library.ServiceReference1.BookDTO[]> GetAllBooksAsync() {
+            return base.Channel.GetAllBooksAsync();
         }
         
-        public int GetUserIdByLoginOrEmail(string loginOrEmail) {
-            return base.Channel.GetUserIdByLoginOrEmail(loginOrEmail);
+        public void AddBook(Library.ServiceReference1.BookDTO book) {
+            base.Channel.AddBook(book);
         }
         
-        public System.Threading.Tasks.Task<int> GetUserIdByLoginOrEmailAsync(string loginOrEmail) {
-            return base.Channel.GetUserIdByLoginOrEmailAsync(loginOrEmail);
+        public System.Threading.Tasks.Task AddBookAsync(Library.ServiceReference1.BookDTO book) {
+            return base.Channel.AddBookAsync(book);
         }
         
-        public void UpdateUser(int userId, string name, string login, string email, string password, byte[] photo) {
-            base.Channel.UpdateUser(userId, name, login, email, password, photo);
+        public void UpdateBook(Library.ServiceReference1.BookDTO bookDto) {
+            base.Channel.UpdateBook(bookDto);
         }
         
-        public System.Threading.Tasks.Task UpdateUserAsync(int userId, string name, string login, string email, string password, byte[] photo) {
-            return base.Channel.UpdateUserAsync(userId, name, login, email, password, photo);
+        public System.Threading.Tasks.Task UpdateBookAsync(Library.ServiceReference1.BookDTO bookDto) {
+            return base.Channel.UpdateBookAsync(bookDto);
+        }
+        
+        public string DeleteBook(int bookId) {
+            return base.Channel.DeleteBook(bookId);
+        }
+        
+        public System.Threading.Tasks.Task<string> DeleteBookAsync(int bookId) {
+            return base.Channel.DeleteBookAsync(bookId);
+        }
+        
+        public Library.ServiceReference1.BookDTO GetBookById(int bookId) {
+            return base.Channel.GetBookById(bookId);
+        }
+        
+        public System.Threading.Tasks.Task<Library.ServiceReference1.BookDTO> GetBookByIdAsync(int bookId) {
+            return base.Channel.GetBookByIdAsync(bookId);
         }
         
         public Library.ServiceReference1.UserDTO[] GetUsers() {
@@ -1553,12 +2039,124 @@ namespace Library.ServiceReference1 {
             return base.Channel.GetUsersAsync();
         }
         
-        public void DeleteUser(int userId) {
-            base.Channel.DeleteUser(userId);
+        public Library.ServiceReference1.Users GetUserInfo(int userId) {
+            return base.Channel.GetUserInfo(userId);
         }
         
-        public System.Threading.Tasks.Task DeleteUserAsync(int userId) {
+        public System.Threading.Tasks.Task<Library.ServiceReference1.Users> GetUserInfoAsync(int userId) {
+            return base.Channel.GetUserInfoAsync(userId);
+        }
+        
+        public void UpdateUser(int userId, string name, string login, string email, string password, byte[] photo) {
+            base.Channel.UpdateUser(userId, name, login, email, password, photo);
+        }
+        
+        public System.Threading.Tasks.Task UpdateUserAsync(int userId, string name, string login, string email, string password, byte[] photo) {
+            return base.Channel.UpdateUserAsync(userId, name, login, email, password, photo);
+        }
+        
+        public string DeleteUser(int userId) {
+            return base.Channel.DeleteUser(userId);
+        }
+        
+        public System.Threading.Tasks.Task<string> DeleteUserAsync(int userId) {
             return base.Channel.DeleteUserAsync(userId);
+        }
+        
+        public Library.ServiceReference1.TakenBookDTO[] GetTakenBooksByUserId(int userId) {
+            return base.Channel.GetTakenBooksByUserId(userId);
+        }
+        
+        public System.Threading.Tasks.Task<Library.ServiceReference1.TakenBookDTO[]> GetTakenBooksByUserIdAsync(int userId) {
+            return base.Channel.GetTakenBooksByUserIdAsync(userId);
+        }
+        
+        public Library.ServiceReference1.TakenBookDTO[] GetAllTakenBooks() {
+            return base.Channel.GetAllTakenBooks();
+        }
+        
+        public System.Threading.Tasks.Task<Library.ServiceReference1.TakenBookDTO[]> GetAllTakenBooksAsync() {
+            return base.Channel.GetAllTakenBooksAsync();
+        }
+        
+        public string TakeBook(int userId, int bookId) {
+            return base.Channel.TakeBook(userId, bookId);
+        }
+        
+        public System.Threading.Tasks.Task<string> TakeBookAsync(int userId, int bookId) {
+            return base.Channel.TakeBookAsync(userId, bookId);
+        }
+        
+        public string ReturnBook(int userId, int sampleId) {
+            return base.Channel.ReturnBook(userId, sampleId);
+        }
+        
+        public System.Threading.Tasks.Task<string> ReturnBookAsync(int userId, int sampleId) {
+            return base.Channel.ReturnBookAsync(userId, sampleId);
+        }
+        
+        public bool HasUserTakenBook(int userId, int sampleId) {
+            return base.Channel.HasUserTakenBook(userId, sampleId);
+        }
+        
+        public System.Threading.Tasks.Task<bool> HasUserTakenBookAsync(int userId, int sampleId) {
+            return base.Channel.HasUserTakenBookAsync(userId, sampleId);
+        }
+        
+        public Library.ServiceReference1.ReviewDTO[] GetAllReviews(int currentUserId) {
+            return base.Channel.GetAllReviews(currentUserId);
+        }
+        
+        public System.Threading.Tasks.Task<Library.ServiceReference1.ReviewDTO[]> GetAllReviewsAsync(int currentUserId) {
+            return base.Channel.GetAllReviewsAsync(currentUserId);
+        }
+        
+        public Library.ServiceReference1.ReviewDTO[] GetReviews() {
+            return base.Channel.GetReviews();
+        }
+        
+        public System.Threading.Tasks.Task<Library.ServiceReference1.ReviewDTO[]> GetReviewsAsync() {
+            return base.Channel.GetReviewsAsync();
+        }
+        
+        public Library.ServiceReference1.ReviewDTO GetReviewById(int reviewId, int _currentUserId) {
+            return base.Channel.GetReviewById(reviewId, _currentUserId);
+        }
+        
+        public System.Threading.Tasks.Task<Library.ServiceReference1.ReviewDTO> GetReviewByIdAsync(int reviewId, int _currentUserId) {
+            return base.Channel.GetReviewByIdAsync(reviewId, _currentUserId);
+        }
+        
+        public string AddBookReview(int userId, int bookId, string review, int rating) {
+            return base.Channel.AddBookReview(userId, bookId, review, rating);
+        }
+        
+        public System.Threading.Tasks.Task<string> AddBookReviewAsync(int userId, int bookId, string review, int rating) {
+            return base.Channel.AddBookReviewAsync(userId, bookId, review, rating);
+        }
+        
+        public void UpdateReview(int reviewId, string content, int rating) {
+            base.Channel.UpdateReview(reviewId, content, rating);
+        }
+        
+        public System.Threading.Tasks.Task UpdateReviewAsync(int reviewId, string content, int rating) {
+            return base.Channel.UpdateReviewAsync(reviewId, content, rating);
+        }
+        
+        public void DeleteReview(int reviewId, int userId) {
+            base.Channel.DeleteReview(reviewId, userId);
+        }
+        
+        public System.Threading.Tasks.Task DeleteReviewAsync(int reviewId, int userId) {
+            return base.Channel.DeleteReviewAsync(reviewId, userId);
+        }
+        
+        public void AdminDeleteReview(int reviewId) {
+            base.Channel.AdminDeleteReview(reviewId);
+        }
+        
+        public System.Threading.Tasks.Task AdminDeleteReviewAsync(int reviewId) {
+            return base.Channel.AdminDeleteReviewAsync(reviewId);
         }
     }
 }

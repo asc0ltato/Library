@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\super\Desktop\Library\Library\App.xaml
-765003166
+11471274920
 
-111473576422
+16-1866148755
 20-456139448
-AddUserWindow.xaml;AdminMainWindow.xaml;AuthorizationWindow.xaml;EditProfileWindow.xaml;LibraryMainWindow.xaml;RegistrationWindow.xaml;Resources\Styles.xaml;
+Resources\Styles.xaml;Views\AddBookWindow.xaml;Views\AddReviewWindow.xaml;Views\AddUserWindow.xaml;Views\AdminMainWindow.xaml;Views\AuthorizationWindow.xaml;Views\EditBookWindow.xaml;Views\EditProfileWindow.xaml;Views\EditReviewWindow.xaml;Views\LibraryMainWindow.xaml;Views\RegistrationWindow.xaml;
 
 False
 

@@ -9,10 +9,6 @@ namespace WCFService.Model
     {
         [Key]
         public int Id { get; set; }
-
-        [StringLength(255)]
-        public string Description { get; set; }
-
         public bool Presence { get; set; }
         public int BookId { get; set; }
         public Book Book { get; set; }

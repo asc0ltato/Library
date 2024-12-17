@@ -31,6 +31,7 @@ namespace WCFService.Repository
         {
             return _dbSet.Where(predicate).ToList();
         }
+
         public IQueryable<T> Include(params Expression<Func<T, object>>[] includeProperties)
         {
             IQueryable<T> query = _dbSet;
@@ -42,6 +43,20 @@ namespace WCFService.Repository
 
             return query;
         }
+
+        public T GetWithIncludes(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties)
+        {
+            IQueryable<T> query = _dbSet;
+
+            foreach (var includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+
+            return query.FirstOrDefault(predicate);
+        }
+
+        public bool Any(Func<T, bool> predicate) => _dbSet.Any(predicate);
 
         public void Add(T entity)
         {

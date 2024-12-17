@@ -5,7 +5,6 @@ namespace WCFService.Model
     [Table("BookAuthors")]
     public class BookAuthors
     {
-        public int Id { get; set; }
         public int BookId { get; set; }
         public Book Book { get; set; }
         public int AuthorId { get; set; }

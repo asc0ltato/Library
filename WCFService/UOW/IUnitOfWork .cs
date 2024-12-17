@@ -11,7 +11,11 @@ namespace WCFService.UOW
         IRepository<Book> Books { get; }
         IRepository<Users> Users { get; }
         IRepository<Review> Reviews { get; }
+        IRepository<Listgetbooks> Listgetbooks { get; }
         IRepository<Role> Roles { get; }
+        IRepository<BookAuthors> BookAuthors { get; } 
+        IRepository<BookGenres> BookGenres { get; }
+        IRepository<Sample> Samples { get; }
         int Save();
     }
 }

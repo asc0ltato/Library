@@ -4,8 +4,8 @@
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import schemaLocation="http://localhost:61496/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:61496/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import schemaLocation="http://localhost:61496/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFService.DTO" />
-      <xsd:import schemaLocation="http://localhost:61496/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:61496/Service1.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:61496/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WCFService.DTO" />
       <xsd:import schemaLocation="http://localhost:61496/Service1.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/WCFService.Model" />
     </xsd:schema>
   </wsdl:types>
@@ -15,11 +15,23 @@
   <wsdl:message name="IService1_RegisterUser_OutputMessage">
     <wsdl:part name="parameters" element="tns:RegisterUserResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_GetUserIdByLoginOrEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserIdByLoginOrEmail" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUserIdByLoginOrEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserIdByLoginOrEmailResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_LoginUser_InputMessage">
     <wsdl:part name="parameters" element="tns:LoginUser" />
   </wsdl:message>
   <wsdl:message name="IService1_LoginUser_OutputMessage">
     <wsdl:part name="parameters" element="tns:LoginUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetGenres_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGenres" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetGenres_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGenresResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_GetBooks_InputMessage">
     <wsdl:part name="parameters" element="tns:GetBooks" />
@@ -27,23 +39,35 @@
   <wsdl:message name="IService1_GetBooks_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetBooksResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_GetUserInfo_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetUserInfo" />
+  <wsdl:message name="IService1_GetAllBooks_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooks" />
   </wsdl:message>
-  <wsdl:message name="IService1_GetUserInfo_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetUserInfoResponse" />
+  <wsdl:message name="IService1_GetAllBooks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_GetUserIdByLoginOrEmail_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetUserIdByLoginOrEmail" />
+  <wsdl:message name="IService1_AddBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBook" />
   </wsdl:message>
-  <wsdl:message name="IService1_GetUserIdByLoginOrEmail_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetUserIdByLoginOrEmailResponse" />
+  <wsdl:message name="IService1_AddBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBookResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_UpdateUser_InputMessage">
-    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  <wsdl:message name="IService1_UpdateBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBook" />
   </wsdl:message>
-  <wsdl:message name="IService1_UpdateUser_OutputMessage">
-    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  <wsdl:message name="IService1_UpdateBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBookById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBookById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookByIdResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_GetUsers_InputMessage">
     <wsdl:part name="parameters" element="tns:GetUsers" />
@@ -51,77 +75,206 @@
   <wsdl:message name="IService1_GetUsers_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetUsersResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_GetUserInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUserInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_DeleteUser_InputMessage">
     <wsdl:part name="parameters" element="tns:DeleteUser" />
   </wsdl:message>
   <wsdl:message name="IService1_DeleteUser_OutputMessage">
     <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_GetTakenBooksByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTakenBooksByUserId" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTakenBooksByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTakenBooksByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllTakenBooks_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTakenBooks" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllTakenBooks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTakenBooksResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TakeBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:TakeBook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TakeBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TakeBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReturnBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnBook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReturnBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_HasUserTakenBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:HasUserTakenBook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_HasUserTakenBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HasUserTakenBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllReviews_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReviews" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllReviews_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReviewsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetReviews_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReviews" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetReviews_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReviewsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetReviewById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReviewById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetReviewById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReviewByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddBookReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBookReview" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddBookReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBookReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReview" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteReview" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AdminDeleteReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:AdminDeleteReview" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AdminDeleteReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AdminDeleteReviewResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="RegisterUser">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/RegisterUser" message="tns:IService1_RegisterUser_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/RegisterUserResponse" message="tns:IService1_RegisterUser_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="GetUserIdByLoginOrEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetUserIdByLoginOrEmail" message="tns:IService1_GetUserIdByLoginOrEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetUserIdByLoginOrEmailResponse" message="tns:IService1_GetUserIdByLoginOrEmail_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="LoginUser">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/LoginUser" message="tns:IService1_LoginUser_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoginUserResponse" message="tns:IService1_LoginUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGenres">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetGenres" message="tns:IService1_GetGenres_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetGenresResponse" message="tns:IService1_GetGenres_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetBooks">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBooks" message="tns:IService1_GetBooks_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBooksResponse" message="tns:IService1_GetBooks_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetUserInfo">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetUserInfo" message="tns:IService1_GetUserInfo_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetUserInfoResponse" message="tns:IService1_GetUserInfo_OutputMessage" />
+    <wsdl:operation name="GetAllBooks">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllBooks" message="tns:IService1_GetAllBooks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllBooksResponse" message="tns:IService1_GetAllBooks_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetUserIdByLoginOrEmail">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetUserIdByLoginOrEmail" message="tns:IService1_GetUserIdByLoginOrEmail_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetUserIdByLoginOrEmailResponse" message="tns:IService1_GetUserIdByLoginOrEmail_OutputMessage" />
+    <wsdl:operation name="AddBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddBook" message="tns:IService1_AddBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddBookResponse" message="tns:IService1_AddBook_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="UpdateUser">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateUser" message="tns:IService1_UpdateUser_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateUserResponse" message="tns:IService1_UpdateUser_OutputMessage" />
+    <wsdl:operation name="UpdateBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateBook" message="tns:IService1_UpdateBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateBookResponse" message="tns:IService1_UpdateBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteBook" message="tns:IService1_DeleteBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteBookResponse" message="tns:IService1_DeleteBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBookById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBookById" message="tns:IService1_GetBookById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBookByIdResponse" message="tns:IService1_GetBookById_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetUsers">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetUsers" message="tns:IService1_GetUsers_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetUsersResponse" message="tns:IService1_GetUsers_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetUserInfo" message="tns:IService1_GetUserInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetUserInfoResponse" message="tns:IService1_GetUserInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateUser" message="tns:IService1_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateUserResponse" message="tns:IService1_UpdateUser_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="DeleteUser">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteUser" message="tns:IService1_DeleteUser_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteUserResponse" message="tns:IService1_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTakenBooksByUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTakenBooksByUserId" message="tns:IService1_GetTakenBooksByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTakenBooksByUserIdResponse" message="tns:IService1_GetTakenBooksByUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTakenBooks">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllTakenBooks" message="tns:IService1_GetAllTakenBooks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllTakenBooksResponse" message="tns:IService1_GetAllTakenBooks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TakeBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TakeBook" message="tns:IService1_TakeBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TakeBookResponse" message="tns:IService1_TakeBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ReturnBook" message="tns:IService1_ReturnBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ReturnBookResponse" message="tns:IService1_ReturnBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HasUserTakenBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/HasUserTakenBook" message="tns:IService1_HasUserTakenBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/HasUserTakenBookResponse" message="tns:IService1_HasUserTakenBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReviews">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllReviews" message="tns:IService1_GetAllReviews_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllReviewsResponse" message="tns:IService1_GetAllReviews_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReviews">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetReviews" message="tns:IService1_GetReviews_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetReviewsResponse" message="tns:IService1_GetReviews_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReviewById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetReviewById" message="tns:IService1_GetReviewById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetReviewByIdResponse" message="tns:IService1_GetReviewById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddBookReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddBookReview" message="tns:IService1_AddBookReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddBookReviewResponse" message="tns:IService1_AddBookReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateReview" message="tns:IService1_UpdateReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateReviewResponse" message="tns:IService1_UpdateReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteReview" message="tns:IService1_DeleteReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteReviewResponse" message="tns:IService1_DeleteReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AdminDeleteReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AdminDeleteReview" message="tns:IService1_AdminDeleteReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AdminDeleteReviewResponse" message="tns:IService1_AdminDeleteReview_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="RegisterUser">
       <soap:operation soapAction="http://tempuri.org/IService1/RegisterUser" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="LoginUser">
-      <soap:operation soapAction="http://tempuri.org/IService1/LoginUser" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetBooks">
-      <soap:operation soapAction="http://tempuri.org/IService1/GetBooks" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetUserInfo">
-      <soap:operation soapAction="http://tempuri.org/IService1/GetUserInfo" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -138,8 +291,71 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="UpdateUser">
-      <soap:operation soapAction="http://tempuri.org/IService1/UpdateUser" style="document" />
+    <wsdl:operation name="LoginUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/LoginUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGenres">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetGenres" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBooks">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBooks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooks">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllBooks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddBook">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBook">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBook">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBookById" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -156,8 +372,134 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="DeleteUser">
       <soap:operation soapAction="http://tempuri.org/IService1/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTakenBooksByUserId">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTakenBooksByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTakenBooks">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllTakenBooks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TakeBook">
+      <soap:operation soapAction="http://tempuri.org/IService1/TakeBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnBook">
+      <soap:operation soapAction="http://tempuri.org/IService1/ReturnBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HasUserTakenBook">
+      <soap:operation soapAction="http://tempuri.org/IService1/HasUserTakenBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReviews">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllReviews" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReviews">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetReviews" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReviewById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetReviewById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddBookReview">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddBookReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReview">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReview">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdminDeleteReview">
+      <soap:operation soapAction="http://tempuri.org/IService1/AdminDeleteReview" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

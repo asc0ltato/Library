@@ -19,6 +19,8 @@ namespace WCFService.UOW
             Roles = new Repository<Role>(_context);
             Samples = new Repository<Sample>(_context);
             Listgetbooks = new Repository<Listgetbooks>(_context);
+            BookAuthors = new Repository<BookAuthors>(_context);
+            BookGenres = new Repository<BookGenres>(_context);
         }
 
         public IRepository<Genre> Genres { get; private set; }
@@ -29,6 +31,8 @@ namespace WCFService.UOW
         public IRepository<Role> Roles { get; private set; }
         public IRepository<Sample> Samples { get; private set; }
         public IRepository<Listgetbooks> Listgetbooks { get; private set; }
+        public IRepository<BookAuthors> BookAuthors { get; private set; } 
+        public IRepository<BookGenres> BookGenres { get; private set; }
         public int Save()
         {
             return _context.SaveChanges();

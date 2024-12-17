@@ -16,6 +16,7 @@ namespace WCFService.Model
       
         public ICollection<BookAuthors> BookAuthors { get; set; }
         public ICollection<BookGenres> BookGenres { get; set; }
+        public ICollection<Sample> Samples { get; set; }
         public ICollection<Review> Reviews { get; set; }
     }
 }

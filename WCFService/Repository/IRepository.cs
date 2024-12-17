@@ -11,6 +11,8 @@ namespace WCFService.Repository
         T GetById(int id);
         IEnumerable<T> Find(Expression<Func<T, bool>> predicate);
         IQueryable<T> Include(params Expression<Func<T, object>>[] includeProperties);
+        T GetWithIncludes(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties);
+        bool Any(Func<T, bool> predicate);
         void Add(T entity);
         void Update(T entity);
         void Remove(int id);
