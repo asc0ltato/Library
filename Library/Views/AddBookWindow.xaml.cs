@@ -71,9 +71,9 @@ namespace Library.Views
                 return;
             }
 
-            if (!int.TryParse(yearText, out int year) || year <= 0)
+            if (!int.TryParse(yearText, out int year) || year <= 0 || year > DateTime.Now.Year)
             {
-                MessageBox.Show("Год должен быть положительным числом!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Год должен быть положительным числом и не больше текущего года!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 

@@ -90,10 +90,41 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetBooksByPage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="page" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBooksByPageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetBooksByPageResult" nillable="true" type="q4:ArrayOfBookDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFilteredBooksByPage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="authorName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="genreName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="page" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFilteredBooksByPageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetFilteredBooksByPageResult" nillable="true" type="q5:ArrayOfBookDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="AddBook">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="book" nillable="true" type="q4:BookDTO" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="book" nillable="true" type="q6:BookDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -105,7 +136,7 @@
   <xs:element name="UpdateBook">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="bookDto" nillable="true" type="q5:BookDTO" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="bookDto" nillable="true" type="q7:BookDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -138,7 +169,7 @@
   <xs:element name="GetBookByIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetBookByIdResult" nillable="true" type="q6:BookDTO" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetBookByIdResult" nillable="true" type="q8:BookDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -150,7 +181,7 @@
   <xs:element name="GetUsersResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetUsersResult" nillable="true" type="q7:ArrayOfUserDTO" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetUsersResult" nillable="true" type="q9:ArrayOfUserDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -164,7 +195,7 @@
   <xs:element name="GetUserInfoResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WCFService.Model" minOccurs="0" name="GetUserInfoResult" nillable="true" type="q8:Users" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WCFService.Model" minOccurs="0" name="GetUserInfoResult" nillable="true" type="q10:Users" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -209,7 +240,7 @@
   <xs:element name="GetTakenBooksByUserIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetTakenBooksByUserIdResult" nillable="true" type="q9:ArrayOfTakenBookDTO" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetTakenBooksByUserIdResult" nillable="true" type="q11:ArrayOfTakenBookDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -221,7 +252,7 @@
   <xs:element name="GetAllTakenBooksResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetAllTakenBooksResult" nillable="true" type="q10:ArrayOfTakenBookDTO" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetAllTakenBooksResult" nillable="true" type="q12:ArrayOfTakenBookDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -280,7 +311,7 @@
   <xs:element name="GetAllReviewsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetAllReviewsResult" nillable="true" type="q11:ArrayOfReviewDTO" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetAllReviewsResult" nillable="true" type="q13:ArrayOfReviewDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -292,7 +323,7 @@
   <xs:element name="GetReviewsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetReviewsResult" nillable="true" type="q12:ArrayOfReviewDTO" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetReviewsResult" nillable="true" type="q14:ArrayOfReviewDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -307,7 +338,7 @@
   <xs:element name="GetReviewByIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetReviewByIdResult" nillable="true" type="q13:ReviewDTO" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WCFService.DTO" minOccurs="0" name="GetReviewByIdResult" nillable="true" type="q15:ReviewDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

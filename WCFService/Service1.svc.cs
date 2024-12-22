@@ -209,6 +209,70 @@ namespace WCFService
             return bookDTOs;
         }
 
+        public List<BookDTO> GetBooksByPage(int page)
+        {
+            var books = _unitOfWork.Books
+                .Include(b => b.BookAuthors.Select(ba => ba.Author))
+                .Include(b => b.BookGenres.Select(bg => bg.Genre))
+                .Include(b => b.Samples)
+                .ToList();
+
+            var bookDTOs = books.Select(b => new BookDTO
+            {
+                Id = b.Id,
+                Name = b.Name,
+                Year = b.Year,
+                Image = b.Image,
+                Authors = b.BookAuthors.Select(ba => ba.Author.Name).ToList(),
+                Genres = b.BookGenres.Select(bg => bg.Genre.Name).ToList(),
+                SampleId = b.Samples.FirstOrDefault()?.Id ?? 0,
+                SampleCount = b.Samples.Count,
+                Presence = b.Samples.Any(s => s.Presence)
+            })
+                .Skip((page - 1) * 4)
+                .Take(4)
+                .ToList();
+
+            return bookDTOs;
+        }
+
+        public List<BookDTO> GetFilteredBooksByPage(string authorName, string genreName, string title, int page)
+        {
+            var booksQuery = _unitOfWork.Books
+               .Include(b => b.BookAuthors.Select(ba => ba.Author))
+               .Include(b => b.BookGenres.Select(bg => bg.Genre))
+               .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(authorName))
+            {
+                booksQuery = booksQuery.Where(b => b.BookAuthors.Any(ba => ba.Author.Name.Contains(authorName)));
+            }
+
+            if (!string.IsNullOrWhiteSpace(genreName))
+            {
+                booksQuery = booksQuery.Where(b => b.BookGenres.Any(bg => bg.Genre.Name.Contains(genreName)));
+            }
+
+            if (!string.IsNullOrWhiteSpace(title))
+            {
+                booksQuery = booksQuery.Where(b => b.Name.Contains(title));
+            }
+
+            var books = booksQuery.ToList();
+
+            return books.Select(b => new BookDTO
+            {
+                Name = b.Name,
+                Year = b.Year,
+                Image = b.Image,
+                Authors = b.BookAuthors.Select(ba => ba.Author.Name).ToList(),
+                Genres = b.BookGenres.Select(bg => bg.Genre.Name).ToList()
+            })
+                .Skip((page - 1) * 4)
+                .Take(4)
+                .ToList();
+        }
+
         public void AddBook(BookDTO bookDTO)
         {
             var existingAuthors = _unitOfWork.Authors

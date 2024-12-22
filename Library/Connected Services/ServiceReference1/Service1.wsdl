@@ -45,6 +45,18 @@
   <wsdl:message name="IService1_GetAllBooks_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetAllBooksResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_GetBooksByPage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBooksByPage" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBooksByPage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBooksByPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFilteredBooksByPage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilteredBooksByPage" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFilteredBooksByPage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilteredBooksByPageResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_AddBook_InputMessage">
     <wsdl:part name="parameters" element="tns:AddBook" />
   </wsdl:message>
@@ -190,6 +202,14 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllBooks" message="tns:IService1_GetAllBooks_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllBooksResponse" message="tns:IService1_GetAllBooks_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="GetBooksByPage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBooksByPage" message="tns:IService1_GetBooksByPage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBooksByPageResponse" message="tns:IService1_GetBooksByPage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilteredBooksByPage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetFilteredBooksByPage" message="tns:IService1_GetFilteredBooksByPage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetFilteredBooksByPageResponse" message="tns:IService1_GetFilteredBooksByPage_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="AddBook">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddBook" message="tns:IService1_AddBook_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddBookResponse" message="tns:IService1_AddBook_OutputMessage" />
@@ -320,6 +340,24 @@
     </wsdl:operation>
     <wsdl:operation name="GetAllBooks">
       <soap:operation soapAction="http://tempuri.org/IService1/GetAllBooks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBooksByPage">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBooksByPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilteredBooksByPage">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetFilteredBooksByPage" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

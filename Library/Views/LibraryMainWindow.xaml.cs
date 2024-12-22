@@ -1,6 +1,7 @@
 ﻿using Library.ServiceReference1;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
 using System.ServiceModel;
@@ -21,8 +22,11 @@ namespace Library.Views
     /// Логика взаимодействия для LibraryMainWindow.xaml
     /// </summary>
     public partial class LibraryMainWindow : Window
-    {
+    { 
         private int _currentUserId;
+        private int _currentPage = 1;
+        private int _booksCount = 0;
+
         public LibraryMainWindow(int userId)
         {
             InitializeComponent();
@@ -62,17 +66,29 @@ namespace Library.Views
                 var selectedGenre = GenreFilterComboBox.SelectedItem as string;
                 var titleSearch = TitleSearchTextBox.Text;
 
-                var books = await serviceClient.GetBooksAsync(authorSearch, selectedGenre == "Все жанры" ? null : selectedGenre, titleSearch);
+                var books = await serviceClient.GetFilteredBooksByPageAsync(authorSearch, selectedGenre == "Все жанры" ? null : selectedGenre, titleSearch, _currentPage);
 
-                BooksDataGrid.ItemsSource = books.Select(b => new
+                BooksItemsControl.ItemsSource = books.Select(b => new BookDTO
                 {
-                    b.Id,
-                    b.Name,
-                    b.Year,
-                    Authors = string.Join(", ", b.Authors),
-                    Genres = string.Join(", ", b.Genres),
-                    b.Image
+                    Id = b.Id,
+                    Name = b.Name,
+                    Year = b.Year,
+                    Authors = b.Authors,
+                    Genres = b.Genres,
+                    Image = b.Image,
+                    SampleId = b.SampleId,
+                    Presence = b.Presence,
                 }).ToList();
+
+                _booksCount = books.Length;
+
+                if (_booksCount == 0 && _currentPage > 1)
+                {
+                    _currentPage = 1;
+                    ApplyFiltersButton_Click(null, null);
+                }
+
+                pageText.Text = $"Страница {_currentPage}";
             }
             catch (Exception ex)
             {
@@ -103,51 +119,27 @@ namespace Library.Views
             try
             {
                 var serviceClient = new Service1Client();
-                var books = await serviceClient.GetAllBooksAsync();
+                var books = await serviceClient.GetBooksByPageAsync(_currentPage);
 
-                var bookList = await Task.WhenAll(books.Select(async b =>
+                BooksItemsControl.ItemsSource = books.Select(b => new BookDTO
                 {
-                    bool isTaken = await serviceClient.HasUserTakenBookAsync(_currentUserId, b.SampleId);
+                    Id = b.Id,
+                    Name = b.Name,
+                    Year = b.Year,
+                    Authors = b.Authors,
+                    Genres = b.Genres,
+                    Image = b.Image,
+                    SampleId = b.SampleId,
+                    Presence = b.Presence
+                }).ToList();
 
-                    return new
-                    {
-                        b.Id,
-                        b.Name,
-                        b.Year,
-                        Image = LoadImage(b.Image),
-                        Authors = string.Join(", ", b.Authors),
-                        Genres = string.Join(", ", b.Genres),
-                        b.SampleId,
-                        IsReturnEnabled = isTaken 
-                    };
-                }));
-
-                BooksDataGrid.ItemsSource = bookList.ToList();
+                _booksCount = books.Length;
+                pageText.Text = $"Страница {_currentPage}";
+                UpdatePaginationButtons();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Ошибка загрузки книг: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        private BitmapImage LoadImage(string imagePath)
-        {
-            if (string.IsNullOrWhiteSpace(imagePath) || !System.IO.File.Exists(imagePath))
-                return null;
-
-            try
-            {
-                var bitmap = new BitmapImage();
-                bitmap.BeginInit();
-                bitmap.UriSource = new Uri(imagePath, UriKind.Absolute);
-                bitmap.CacheOption = BitmapCacheOption.OnLoad;
-                bitmap.EndInit();
-                return bitmap;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка загрузки изображения: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-                return null;
             }
         }
 
@@ -292,18 +284,31 @@ namespace Library.Views
 
         private void AddReviewButton_Click(object sender, RoutedEventArgs e)
         {
-            if (sender is Button button && int.TryParse(button.Tag.ToString(), out int bookId))
+            if (sender is Button button)
             {
-                if (_currentUserId <= 0)
+                if (button.Tag == null)
                 {
-                    MessageBox.Show("Не удалось определить пользователя.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Не удалось определить книгу. Отсутствует идентификатор.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
-                var addReviewWindow = new AddReviewWindow(_currentUserId, bookId);
-                if (addReviewWindow.ShowDialog() == true)
+                if (int.TryParse(button.Tag.ToString(), out int bookId))
                 {
-                    _ = LoadAllReviews();
+                    if (_currentUserId <= 0)
+                    {
+                        MessageBox.Show("Не удалось определить пользователя.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        return;
+                    }
+
+                    var addReviewWindow = new AddReviewWindow(_currentUserId, bookId);
+                    if (addReviewWindow.ShowDialog() == true)
+                    {
+                        _ = LoadAllReviews();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Идентификатор книги имеет неверный формат.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
             }
             else
@@ -366,6 +371,44 @@ namespace Library.Views
                     }
                 }
             }
+        }
+
+        private async void prevPage_Click(object sender, RoutedEventArgs e)
+        {
+            if (_currentPage > 1)
+            {
+                _currentPage--;
+                await LoadBooks();
+            }
+        }
+
+        private async void nextPage_Click(object sender, RoutedEventArgs e)
+        {
+            if (await HasNextPage())
+            {
+                _currentPage++;
+                await LoadBooks();
+            }
+        }
+
+        private async Task<bool> HasNextPage()
+        {
+            try
+            {
+                var serviceClient = new Service1Client();
+                var nextPageBooks = await serviceClient.GetBooksByPageAsync(_currentPage + 1);
+                return nextPageBooks.Any();
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        private async void UpdatePaginationButtons()
+        {
+            prevPage.IsEnabled = _currentPage > 1;
+            nextPage.IsEnabled = await HasNextPage();
         }
     }
 }

@@ -21,6 +21,8 @@ namespace Library.Views
     /// </summary>
     public partial class AdminMainWindow : Window
     {
+        private int _currentPage = 1;
+        private int _booksCount = 0;
         public AdminMainWindow()
         {
             InitializeComponent();
@@ -59,17 +61,29 @@ namespace Library.Views
                 var selectedGenre = GenreFilterComboBox.SelectedItem as string;
                 var titleSearch = TitleSearchTextBox.Text;
 
-                var books = await serviceClient.GetBooksAsync(authorSearch, selectedGenre == "Все жанры" ? null : selectedGenre, titleSearch);
+                var books = await serviceClient.GetFilteredBooksByPageAsync(authorSearch, selectedGenre == "Все жанры" ? null : selectedGenre, titleSearch, _currentPage);
 
-                BooksDataGrid.ItemsSource = books.Select(b => new
+                BooksItemsControl.ItemsSource = books.Select(b => new BookDTO
                 {
-                    b.Id,
-                    b.Name,
-                    b.Year,
-                    Authors = string.Join(", ", b.Authors),
-                    Genres = string.Join(", ", b.Genres),
-                    b.Image
+                    Id = b.Id,
+                    Name = b.Name,
+                    Year = b.Year,
+                    Authors = b.Authors,
+                    Genres = b.Genres,
+                    Image = b.Image,
+                    SampleId = b.SampleId,
+                    Presence = b.Presence,
                 }).ToList();
+
+                _booksCount = books.Length;
+
+                if (_booksCount == 0 && _currentPage > 1)
+                {
+                    _currentPage = 1;
+                    ApplyFiltersButton_Click(null, null);
+                }
+
+                pageText.Text = $"Страница {_currentPage}";
             }
             catch (Exception ex)
             {
@@ -100,42 +114,27 @@ namespace Library.Views
             try
             {
                 var serviceClient = new Service1Client();
-                var books = await serviceClient.GetAllBooksAsync();
+                var books = await serviceClient.GetBooksByPageAsync(_currentPage);
 
-                BooksDataGrid.ItemsSource = books.Select(b => new
+                BooksItemsControl.ItemsSource = books.Select(b => new BookDTO
                 {
-                    b.Id,
-                    b.Name,
-                    b.Year,
-                    Image = LoadImage(b.Image),
-                    Authors = string.Join(", ", b.Authors),
-                    Genres = string.Join(", ", b.Genres)
+                    Id = b.Id,
+                    Name = b.Name,
+                    Year = b.Year,
+                    Authors = b.Authors,
+                    Genres = b.Genres,
+                    Image = b.Image,
+                    SampleId = b.SampleId,
+                    Presence = b.Presence
                 }).ToList();
+
+                _booksCount = books.Length;
+                pageText.Text = _booksCount > 0 ? $"Страница {_currentPage}" : "Нет данных";
+                UpdatePaginationButtons();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Ошибка загрузки книг: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        private BitmapImage LoadImage(string imagePath)
-        {
-            if (string.IsNullOrWhiteSpace(imagePath) || !System.IO.File.Exists(imagePath))
-                return null;
-
-            try
-            {
-                var bitmap = new BitmapImage();
-                bitmap.BeginInit();
-                bitmap.UriSource = new Uri(imagePath, UriKind.Absolute);
-                bitmap.CacheOption = BitmapCacheOption.OnLoad;
-                bitmap.EndInit();
-                return bitmap;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка загрузки изображения: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-                return null;
             }
         }
 
@@ -144,7 +143,7 @@ namespace Library.Views
             var addBookWindow = new AddBookWindow();
             if (addBookWindow.ShowDialog() == true)
             {
-                await LoadBooks(); 
+                await LoadBooks();
             }
         }
 
@@ -177,7 +176,13 @@ namespace Library.Views
                         if (response == "Книга успешно удалена.")
                         {
                             await LoadBooks();
-                        }   
+                            if (_booksCount == 0 && _currentPage > 1)
+                            {
+                                _currentPage--; 
+                                await LoadBooks(); 
+                            }
+                            UpdatePaginationButtons();
+                        }
                     }
                 }
                 else
@@ -334,6 +339,44 @@ namespace Library.Views
             {
                 MessageBox.Show($"Ошибка загрузки взятых книг: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private async void prevPage_Click(object sender, RoutedEventArgs e)
+        {
+            if(_currentPage > 1) 
+    {
+                _currentPage--;
+                await LoadBooks();
+            }
+        }
+
+        private async void nextPage_Click(object sender, RoutedEventArgs e)
+        {
+            if (await HasNextPage())
+            {
+                _currentPage++;
+                await LoadBooks();
+            }
+        }
+
+        private async Task<bool> HasNextPage()
+        {
+            try
+            {
+                var serviceClient = new Service1Client();
+                var nextPageBooks = await serviceClient.GetBooksByPageAsync(_currentPage + 1);
+                return nextPageBooks.Any();
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        private async void UpdatePaginationButtons()
+        {
+            prevPage.IsEnabled = _currentPage > 1;
+            nextPage.IsEnabled = await HasNextPage();
         }
     }
 }

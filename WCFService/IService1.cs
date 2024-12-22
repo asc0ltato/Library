@@ -24,6 +24,10 @@ namespace WCFService
         [OperationContract]
         List<BookDTO> GetAllBooks();
         [OperationContract]
+        List<BookDTO> GetBooksByPage(int page);
+        [OperationContract]
+        List<BookDTO> GetFilteredBooksByPage(string authorName, string genreName, string title, int page);
+        [OperationContract]
         void AddBook(BookDTO book);
         [OperationContract]
         void UpdateBook(BookDTO bookDto);

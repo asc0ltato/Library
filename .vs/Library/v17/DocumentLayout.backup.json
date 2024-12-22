@@ -3,190 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\super\\Desktop\\Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\super\\AppData\\Local\\Temp\\.vsdbgsrc\\3714f74b82eacc6cf8dcf1e32980b0908d4f8b447d25d4eb08ff1424a7b57c02\\ResourcePart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|c:\\users\\super\\desktop\\library\\library\\views\\librarymainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\librarymainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\librarymainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|c:\\users\\super\\desktop\\library\\library\\views\\librarymainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\librarymainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|c:\\users\\super\\desktop\\library\\library\\views\\adminmainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\adminmainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\adminmainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\adminmainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\adminmainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\adminmainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\addbookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\addbookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\converter\\listtostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\converter\\listtostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\librarymainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\librarymainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\adduserwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\adduserwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\editbookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\editbookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\authorizationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\authorizationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\addreviewwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\addreviewwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\adduserwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\adduserwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\registrationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\registrationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\registrationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\registrationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\editreviewwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\editreviewwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\editreviewwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\editreviewwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\editprofilewindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\editprofilewindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\editprofilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\editprofilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\editbookwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\editbookwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\addreviewwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\addreviewwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\addbookwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\addbookwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\views\\authorizationwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\views\\authorizationwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\resources\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\resources\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\iservice1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\iservice1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\uow\\unitofwork .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\uow\\unitofwork .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\uow\\iunitofwork .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\uow\\iunitofwork .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\dto\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\dto\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\converter\\bitmapimageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\converter\\bitmapimageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\converter\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\converter\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\super\\AppData\\Local\\Temp\\.vsdbgsrc\\5bd1382993348c832e1a36c46eef8a3066055294d59d9915c9d91b46481b75d6\\FrameworkTemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\dto\\takenbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\dto\\takenbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\model\\bookgenres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\model\\bookgenres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\model\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\model\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\model\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\model\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\model\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\model\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\model\\bookauthors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\model\\bookauthors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|C:\\Users\\super\\Desktop\\Library\\library\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{B9BFBEC7-46B7-4A07-A39B-EF3EE9B656D3}|Library\\Library.csproj|solutionrelative:library\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\super\\Desktop\\Library\\packages\\OpenDialogWindowHandler.0.0.0.1\\ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:packages\\OpenDialogWindowHandler.0.0.0.1\\ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|C:\\Users\\super\\Desktop\\Library\\wcfservice\\iservice1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6072A630-10BE-46B3-B5F8-ECD753DF8924}|WCFService\\WCFService.csproj|solutionrelative:wcfservice\\iservice1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -196,570 +58,152 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ResourcePart.cs",
-              "DocumentMoniker": "C:\\Users\\super\\AppData\\Local\\Temp\\.vsdbgsrc\\3714f74b82eacc6cf8dcf1e32980b0908d4f8b447d25d4eb08ff1424a7b57c02\\ResourcePart.cs",
-              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\3714f74b82eacc6cf8dcf1e32980b0908d4f8b447d25d4eb08ff1424a7b57c02\\ResourcePart.cs",
-              "ToolTip": "C:\\Users\\super\\AppData\\Local\\Temp\\.vsdbgsrc\\3714f74b82eacc6cf8dcf1e32980b0908d4f8b447d25d4eb08ff1424a7b57c02\\ResourcePart.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\3714f74b82eacc6cf8dcf1e32980b0908d4f8b447d25d4eb08ff1424a7b57c02\\ResourcePart.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAEAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:10:52.324Z",
-              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "AdminMainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AdminMainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Library\\Views\\AdminMainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AdminMainWindow.xaml.cs",
               "RelativeToolTip": "Library\\Views\\AdminMainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAFYBAAAAAAAAAAAiwDwAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:04:22.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdminMainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AdminMainWindow.xaml",
-              "RelativeDocumentMoniker": "Library\\Views\\AdminMainWindow.xaml",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AdminMainWindow.xaml",
-              "RelativeToolTip": "Library\\Views\\AdminMainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-17T02:02:32.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EditBookWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\EditBookWindow.xaml",
-              "RelativeDocumentMoniker": "Library\\Views\\EditBookWindow.xaml",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\EditBookWindow.xaml",
-              "RelativeToolTip": "Library\\Views\\EditBookWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-17T02:02:38.193Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LibraryMainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\LibraryMainWindow.xaml",
-              "RelativeDocumentMoniker": "Library\\Views\\LibraryMainWindow.xaml",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\LibraryMainWindow.xaml",
-              "RelativeToolTip": "Library\\Views\\LibraryMainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-17T02:05:22.625Z",
+              "WhenOpened": "2024-12-22T11:57:30.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LibraryMainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\LibraryMainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Library\\Views\\LibraryMainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\LibraryMainWindow.xaml.cs",
+              "RelativeToolTip": "Library\\Views\\LibraryMainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T02:16:40.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListToStringConverter.cs",
+              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Converter\\ListToStringConverter.cs",
+              "RelativeDocumentMoniker": "Library\\Converter\\ListToStringConverter.cs",
+              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Converter\\ListToStringConverter.cs",
+              "RelativeToolTip": "Library\\Converter\\ListToStringConverter.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T02:15:42.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditBookWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\EditBookWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Library\\Views\\EditBookWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\EditBookWindow.xaml.cs",
+              "RelativeToolTip": "Library\\Views\\EditBookWindow.xaml.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAowJoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T02:11:06.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BoolToVisibilityConverter.cs",
+              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Converter\\BoolToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "Library\\Converter\\BoolToVisibilityConverter.cs",
+              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Converter\\BoolToVisibilityConverter.cs",
+              "RelativeToolTip": "Library\\Converter\\BoolToVisibilityConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T01:51:13.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\App.xaml",
               "RelativeDocumentMoniker": "Library\\App.xaml",
               "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\App.xaml",
               "RelativeToolTip": "Library\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-10T08:56:25.243Z",
+              "WhenOpened": "2024-12-20T01:48:06.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminMainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AdminMainWindow.xaml",
+              "RelativeDocumentMoniker": "Library\\Views\\AdminMainWindow.xaml",
+              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AdminMainWindow.xaml",
+              "RelativeToolTip": "Library\\Views\\AdminMainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-18T03:40:16.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\App.config",
-              "RelativeDocumentMoniker": "Library\\App.config",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\App.config",
-              "RelativeToolTip": "Library\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-10T08:50:40.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LibraryMainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\LibraryMainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Library\\Views\\LibraryMainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\LibraryMainWindow.xaml.cs",
-              "RelativeToolTip": "Library\\Views\\LibraryMainWindow.xaml.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAkwBEAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "BitmapImageConverter.cs",
+              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Converter\\BitmapImageConverter.cs",
+              "RelativeDocumentMoniker": "Library\\Converter\\BitmapImageConverter.cs",
+              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Converter\\BitmapImageConverter.cs",
+              "RelativeToolTip": "Library\\Converter\\BitmapImageConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:05:31.081Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthorizationWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AuthorizationWindow.xaml",
-              "RelativeDocumentMoniker": "Library\\Views\\AuthorizationWindow.xaml",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AuthorizationWindow.xaml",
-              "RelativeToolTip": "Library\\Views\\AuthorizationWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-17T02:02:34.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AddBookWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AddBookWindow.xaml",
-              "RelativeDocumentMoniker": "Library\\Views\\AddBookWindow.xaml",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AddBookWindow.xaml",
-              "RelativeToolTip": "Library\\Views\\AddBookWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-17T02:02:10.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T01:47:19.438Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "AddReviewWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AddReviewWindow.xaml",
-              "RelativeDocumentMoniker": "Library\\Views\\AddReviewWindow.xaml",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AddReviewWindow.xaml",
-              "RelativeToolTip": "Library\\Views\\AddReviewWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-17T02:02:28.971Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "EditProfileWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\EditProfileWindow.xaml",
-              "RelativeDocumentMoniker": "Library\\Views\\EditProfileWindow.xaml",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\EditProfileWindow.xaml",
-              "RelativeToolTip": "Library\\Views\\EditProfileWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-17T02:02:40.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AddReviewWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AddReviewWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Library\\Views\\AddReviewWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AddReviewWindow.xaml.cs",
-              "RelativeToolTip": "Library\\Views\\AddReviewWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:03:48.747Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AuthorizationWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AuthorizationWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Library\\Views\\AuthorizationWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AuthorizationWindow.xaml.cs",
-              "RelativeToolTip": "Library\\Views\\AuthorizationWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:03:19.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AddBookWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AddBookWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Library\\Views\\AddBookWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AddBookWindow.xaml.cs",
-              "RelativeToolTip": "Library\\Views\\AddBookWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:02:03.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AddUserWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AddUserWindow.xaml",
-              "RelativeDocumentMoniker": "Library\\Views\\AddUserWindow.xaml",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AddUserWindow.xaml",
-              "RelativeToolTip": "Library\\Views\\AddUserWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-17T02:02:31.6Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AddUserWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AddUserWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Library\\Views\\AddUserWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\AddUserWindow.xaml.cs",
-              "RelativeToolTip": "Library\\Views\\AddUserWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:04:10.059Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RegistrationWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\RegistrationWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Library\\Views\\RegistrationWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\RegistrationWindow.xaml.cs",
-              "RelativeToolTip": "Library\\Views\\RegistrationWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:01:11.307Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RegistrationWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\RegistrationWindow.xaml",
-              "RelativeDocumentMoniker": "Library\\Views\\RegistrationWindow.xaml",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\RegistrationWindow.xaml",
-              "RelativeToolTip": "Library\\Views\\RegistrationWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-17T02:01:27.397Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EditReviewWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\EditReviewWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Library\\Views\\EditReviewWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\EditReviewWindow.xaml.cs",
-              "RelativeToolTip": "Library\\Views\\EditReviewWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:05:19.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EditReviewWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\EditReviewWindow.xaml",
-              "RelativeDocumentMoniker": "Library\\Views\\EditReviewWindow.xaml",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\EditReviewWindow.xaml",
-              "RelativeToolTip": "Library\\Views\\EditReviewWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-17T02:05:11.618Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "EditProfileWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\EditProfileWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Library\\Views\\EditProfileWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\EditProfileWindow.xaml.cs",
-              "RelativeToolTip": "Library\\Views\\EditProfileWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:05:07.57Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "EditBookWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\EditBookWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Library\\Views\\EditBookWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\EditBookWindow.xaml.cs",
-              "RelativeToolTip": "Library\\Views\\EditBookWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:04:48.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Styles.xaml",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Resources\\Styles.xaml",
-              "RelativeDocumentMoniker": "Library\\Resources\\Styles.xaml",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Resources\\Styles.xaml",
-              "RelativeToolTip": "Library\\Resources\\Styles.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-15T11:58:50.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\DTO\\UserDTO.cs",
-              "RelativeDocumentMoniker": "WCFService\\DTO\\UserDTO.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\DTO\\UserDTO.cs",
-              "RelativeToolTip": "WCFService\\DTO\\UserDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T01:26:41.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ReviewDTO.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\DTO\\ReviewDTO.cs",
-              "RelativeDocumentMoniker": "WCFService\\DTO\\ReviewDTO.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\DTO\\ReviewDTO.cs",
-              "RelativeToolTip": "WCFService\\DTO\\ReviewDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T00:01:24.917Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "FrameworkTemplate.cs",
-              "DocumentMoniker": "C:\\Users\\super\\AppData\\Local\\Temp\\.vsdbgsrc\\5bd1382993348c832e1a36c46eef8a3066055294d59d9915c9d91b46481b75d6\\FrameworkTemplate.cs",
-              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5bd1382993348c832e1a36c46eef8a3066055294d59d9915c9d91b46481b75d6\\FrameworkTemplate.cs",
-              "ToolTip": "C:\\Users\\super\\AppData\\Local\\Temp\\.vsdbgsrc\\5bd1382993348c832e1a36c46eef8a3066055294d59d9915c9d91b46481b75d6\\FrameworkTemplate.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5bd1382993348c832e1a36c46eef8a3066055294d59d9915c9d91b46481b75d6\\FrameworkTemplate.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "ViewState": "AgIAAE4DAAAAAAAAAAAswGEDAAADAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T22:54:35.077Z",
-              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "BoolToVisibilityConverter.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Converter\\BoolToVisibilityConverter.cs",
-              "RelativeDocumentMoniker": "Library\\Converter\\BoolToVisibilityConverter.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Converter\\BoolToVisibilityConverter.cs",
-              "RelativeToolTip": "Library\\Converter\\BoolToVisibilityConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T00:16:28.149Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Service1.svc.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Service1.svc.cs",
-              "RelativeDocumentMoniker": "WCFService\\Service1.svc.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Service1.svc.cs",
-              "RelativeToolTip": "WCFService\\Service1.svc.cs",
-              "ViewState": "AgIAAB8DAAAAAAAAAAAAAB0DAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T19:13:03.237Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
               "Title": "IService1.cs",
               "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\IService1.cs",
               "RelativeDocumentMoniker": "WCFService\\IService1.cs",
               "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\IService1.cs",
               "RelativeToolTip": "WCFService\\IService1.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAkwDUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T19:12:58.586Z"
+              "WhenOpened": "2024-12-18T12:32:36.079Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UnitOfWork .cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\UOW\\UnitOfWork .cs",
-              "RelativeDocumentMoniker": "WCFService\\UOW\\UnitOfWork .cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\UOW\\UnitOfWork .cs",
-              "RelativeToolTip": "WCFService\\UOW\\UnitOfWork .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Service1.svc.cs",
+              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Service1.svc.cs",
+              "RelativeDocumentMoniker": "WCFService\\Service1.svc.cs",
+              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Service1.svc.cs",
+              "RelativeToolTip": "WCFService\\Service1.svc.cs",
+              "ViewState": "AgIAANsBAAAAAAAAAAAAwOEBAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T08:38:37.889Z"
+              "WhenOpened": "2024-12-18T12:31:59.597Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "IUnitOfWork .cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\UOW\\IUnitOfWork .cs",
-              "RelativeDocumentMoniker": "WCFService\\UOW\\IUnitOfWork .cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\UOW\\IUnitOfWork .cs",
-              "RelativeToolTip": "WCFService\\UOW\\IUnitOfWork .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T08:28:47.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Repository\\Repository.cs",
-              "RelativeDocumentMoniker": "WCFService\\Repository\\Repository.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Repository\\Repository.cs",
-              "RelativeToolTip": "WCFService\\Repository\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T08:30:01.914Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Repository\\IRepository.cs",
-              "RelativeDocumentMoniker": "WCFService\\Repository\\IRepository.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Repository\\IRepository.cs",
-              "RelativeToolTip": "WCFService\\Repository\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T08:29:57.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "TakenBookDTO.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\DTO\\TakenBookDTO.cs",
-              "RelativeDocumentMoniker": "WCFService\\DTO\\TakenBookDTO.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\DTO\\TakenBookDTO.cs",
-              "RelativeToolTip": "WCFService\\DTO\\TakenBookDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T15:38:42.783Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 3,
               "Title": "BookDTO.cs",
               "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\DTO\\BookDTO.cs",
               "RelativeDocumentMoniker": "WCFService\\DTO\\BookDTO.cs",
               "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\DTO\\BookDTO.cs",
               "RelativeToolTip": "WCFService\\DTO\\BookDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwAgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T20:56:04.141Z"
+              "WhenOpened": "2024-12-20T01:25:59.074Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Model\\Book.cs",
-              "RelativeDocumentMoniker": "WCFService\\Model\\Book.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Model\\Book.cs",
-              "RelativeToolTip": "WCFService\\Model\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T08:29:05.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "LibraryContext.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Model\\LibraryContext.cs",
-              "RelativeDocumentMoniker": "WCFService\\Model\\LibraryContext.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Model\\LibraryContext.cs",
-              "RelativeToolTip": "WCFService\\Model\\LibraryContext.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAiwD8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T08:29:18.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "packages.config",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\packages.config",
-              "RelativeDocumentMoniker": "Library\\packages.config",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\packages.config",
-              "RelativeToolTip": "Library\\packages.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-10T08:46:41.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Genre.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Model\\Genre.cs",
-              "RelativeDocumentMoniker": "WCFService\\Model\\Genre.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Model\\Genre.cs",
-              "RelativeToolTip": "WCFService\\Model\\Genre.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T08:29:15.183Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "BookGenres.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Model\\BookGenres.cs",
-              "RelativeDocumentMoniker": "WCFService\\Model\\BookGenres.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Model\\BookGenres.cs",
-              "RelativeToolTip": "WCFService\\Model\\BookGenres.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T08:29:11.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Author.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Model\\Author.cs",
-              "RelativeDocumentMoniker": "WCFService\\Model\\Author.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Model\\Author.cs",
-              "RelativeToolTip": "WCFService\\Model\\Author.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T08:29:00.57Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "BookAuthors.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Model\\BookAuthors.cs",
-              "RelativeDocumentMoniker": "WCFService\\Model\\BookAuthors.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Model\\BookAuthors.cs",
-              "RelativeToolTip": "WCFService\\Model\\BookAuthors.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T08:29:08.337Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Model\\Role.cs",
-              "RelativeDocumentMoniker": "WCFService\\Model\\Role.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Model\\Role.cs",
-              "RelativeToolTip": "WCFService\\Model\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T08:29:41.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\App.xaml.cs",
-              "RelativeDocumentMoniker": "Library\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\App.xaml.cs",
-              "RelativeToolTip": "Library\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T13:50:58.071Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Web.config",
-              "RelativeDocumentMoniker": "WCFService\\Web.config",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\WCFService\\Web.config",
-              "RelativeToolTip": "WCFService\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-10T08:27:15.267Z",
+              "DocumentIndex": 5,
+              "Title": "LibraryMainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\LibraryMainWindow.xaml",
+              "RelativeDocumentMoniker": "Library\\Views\\LibraryMainWindow.xaml",
+              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\Library\\Views\\LibraryMainWindow.xaml",
+              "RelativeToolTip": "Library\\Views\\LibraryMainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-18T03:40:11.533Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "ReadMe.txt",
-              "DocumentMoniker": "C:\\Users\\super\\Desktop\\Library\\packages\\OpenDialogWindowHandler.0.0.0.1\\ReadMe.txt",
-              "RelativeDocumentMoniker": "packages\\OpenDialogWindowHandler.0.0.0.1\\ReadMe.txt",
-              "ToolTip": "C:\\Users\\super\\Desktop\\Library\\packages\\OpenDialogWindowHandler.0.0.0.1\\ReadMe.txt",
-              "RelativeToolTip": "packages\\OpenDialogWindowHandler.0.0.0.1\\ReadMe.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-12-10T13:49:15.077Z"
             }
           ]
         }

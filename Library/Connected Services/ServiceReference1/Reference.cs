@@ -1803,6 +1803,18 @@ namespace Library.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllBooks", ReplyAction="http://tempuri.org/IService1/GetAllBooksResponse")]
         System.Threading.Tasks.Task<Library.ServiceReference1.BookDTO[]> GetAllBooksAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetBooksByPage", ReplyAction="http://tempuri.org/IService1/GetBooksByPageResponse")]
+        Library.ServiceReference1.BookDTO[] GetBooksByPage(int page);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetBooksByPage", ReplyAction="http://tempuri.org/IService1/GetBooksByPageResponse")]
+        System.Threading.Tasks.Task<Library.ServiceReference1.BookDTO[]> GetBooksByPageAsync(int page);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetFilteredBooksByPage", ReplyAction="http://tempuri.org/IService1/GetFilteredBooksByPageResponse")]
+        Library.ServiceReference1.BookDTO[] GetFilteredBooksByPage(string authorName, string genreName, string title, int page);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetFilteredBooksByPage", ReplyAction="http://tempuri.org/IService1/GetFilteredBooksByPageResponse")]
+        System.Threading.Tasks.Task<Library.ServiceReference1.BookDTO[]> GetFilteredBooksByPageAsync(string authorName, string genreName, string title, int page);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddBook", ReplyAction="http://tempuri.org/IService1/AddBookResponse")]
         void AddBook(Library.ServiceReference1.BookDTO book);
         
@@ -1997,6 +2009,22 @@ namespace Library.ServiceReference1 {
         
         public System.Threading.Tasks.Task<Library.ServiceReference1.BookDTO[]> GetAllBooksAsync() {
             return base.Channel.GetAllBooksAsync();
+        }
+        
+        public Library.ServiceReference1.BookDTO[] GetBooksByPage(int page) {
+            return base.Channel.GetBooksByPage(page);
+        }
+        
+        public System.Threading.Tasks.Task<Library.ServiceReference1.BookDTO[]> GetBooksByPageAsync(int page) {
+            return base.Channel.GetBooksByPageAsync(page);
+        }
+        
+        public Library.ServiceReference1.BookDTO[] GetFilteredBooksByPage(string authorName, string genreName, string title, int page) {
+            return base.Channel.GetFilteredBooksByPage(authorName, genreName, title, page);
+        }
+        
+        public System.Threading.Tasks.Task<Library.ServiceReference1.BookDTO[]> GetFilteredBooksByPageAsync(string authorName, string genreName, string title, int page) {
+            return base.Channel.GetFilteredBooksByPageAsync(authorName, genreName, title, page);
         }
         
         public void AddBook(Library.ServiceReference1.BookDTO book) {

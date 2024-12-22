@@ -2,7 +2,8 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Библиотека" Height="600" Width="800" MinWidth="800" MinHeight="600"
-        WindowStartupLocation="CenterScreen"  Loaded="Window_Loaded">
+        WindowStartupLocation="CenterScreen"  Loaded="Window_Loaded" ResizeMode="NoResize">
+
     <Window.Background>
         <ImageBrush ImageSource="/Resources/Images/background.jpg" Stretch="UniformToFill" />
     </Window.Background>
@@ -29,65 +30,43 @@
                             <Button Content="Применить" Style="{StaticResource RoundedButtonStyle}" Click="ApplyFiltersButton_Click" Height="30" Width="130" Margin="20,10,0,0" />
                         </WrapPanel>
 
-                        <DataGrid x:Name="BooksDataGrid" AutoGenerateColumns="False" CanUserAddRows="False"
-                              IsReadOnly="True" SelectionMode="Single" SelectionUnit="FullRow"
-                              Margin="0,10,0,0" FontFamily="{StaticResource MontserratFontFamily}" 
-                              FontSize="14" GridLinesVisibility="Horizontal" RowBackground="#F9F9F9" 
-                              AlternatingRowBackground="#EFEFEF" Foreground="Black" IsSynchronizedWithCurrentItem="False"
-                              Grid.Row="1">
-                                <DataGrid.Columns>
-                                    <DataGridTextColumn Header="Название" Binding="{Binding Name}" Width="1.3*">
-                                        <DataGridTextColumn.ElementStyle>
-                                            <Style TargetType="TextBlock">
-                                                <Setter Property="TextWrapping" Value="Wrap" />
-                                            </Style>
-                                        </DataGridTextColumn.ElementStyle>
-                                    </DataGridTextColumn>
-                                    <DataGridTextColumn Header="Год" Binding="{Binding Year}" Width="0.9*">
-                                        <DataGridTextColumn.ElementStyle>
-                                            <Style TargetType="TextBlock">
-                                                <Setter Property="TextWrapping" Value="Wrap" />
-                                            </Style>
-                                        </DataGridTextColumn.ElementStyle>
-                                    </DataGridTextColumn>
-                                    <DataGridTextColumn Header="Авторы" Binding="{Binding Authors}" Width="1.8*">
-                                        <DataGridTextColumn.ElementStyle>
-                                            <Style TargetType="TextBlock">
-                                                <Setter Property="TextWrapping" Value="Wrap" />
-                                            </Style>
-                                        </DataGridTextColumn.ElementStyle>
-                                    </DataGridTextColumn>
-                                    <DataGridTextColumn Header="Жанры" Binding="{Binding Genres}" Width="1.8*">
-                                        <DataGridTextColumn.ElementStyle>
-                                            <Style TargetType="TextBlock">
-                                                <Setter Property="TextWrapping" Value="Wrap" />
-                                            </Style>
-                                        </DataGridTextColumn.ElementStyle>
-                                    </DataGridTextColumn>
-                                    <DataGridTemplateColumn Header="Фото" Width="1.9*">
-                                        <DataGridTemplateColumn.CellTemplate>
-                                            <DataTemplate>
-                                                <Border Width="100" Height="140" CornerRadius="4" Background="Black" BorderBrush="Gray" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-                                                    <Image Source="{Binding Image}" Stretch="UniformToFill" ClipToBounds="True" />
-                                                </Border>
-                                            </DataTemplate>
-                                        </DataGridTemplateColumn.CellTemplate>
-                                    </DataGridTemplateColumn>
-                                <DataGridTemplateColumn Width="1.4*">
-                                    <DataGridTemplateColumn.CellTemplate>
-                                        <DataTemplate>
-                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                                <Button Content="+" Style="{StaticResource RoundedButtonStyle}" Click="TakeBookButton_Click" Tag="{Binding Id}" Width="30" Height="30" Margin="0,0,20,0"/>
-                                                <Button Style="{StaticResource ImageButtonStyle}" Click="AddReviewButton_Click" Tag="{Binding Id}">
+                        <ItemsControl x:Name="BooksItemsControl" Grid.Row="1">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel Orientation="Horizontal" ItemWidth="175"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Border BorderBrush="Gray"  Background="LightBlue" Margin="15 15 15 30">
+                                        <StackPanel>
+                                            <Border>
+                                                <Image Source="{Binding Image, Converter={StaticResource BitmapImageConverter}}" Stretch="Fill" Width="144" Height="180"></Image>
+                                            </Border>
+                                            <DockPanel>
+                                                <TextBlock Text="{Binding Name}" FontSize="10" DockPanel.Dock="Left"/>
+                                                <TextBlock Text="{Binding Year}" FontSize="10" DockPanel.Dock="Right" HorizontalAlignment="Right"/>
+                                            </DockPanel>
+                                            <TextBlock Text="{Binding Authors, Converter={StaticResource ListToStringConverter}}" FontSize="10"/>
+                                            <TextBlock Text="{Binding Genres, Converter={StaticResource ListToStringConverter}}" FontSize="10"/>
+                                            <DockPanel Margin="0 0 0 -5">
+                                                <Button Style="{StaticResource RoundedButtonStyle}" Click="TakeBookButton_Click" Tag="{Binding Id}" Content="+" Width="50" DockPanel.Dock="Left"/>
+                                                <Button Style="{StaticResource ImageButtonStyle}" Click="AddReviewButton_Click" Tag="{Binding Id}" DockPanel.Dock="Right" HorizontalAlignment="Right">
                                                     <Image Source="/Resources/Images/review.png" Width="30" Height="30" />
                                                 </Button>
-                                            </StackPanel>
-                                        </DataTemplate>
-                                    </DataGridTemplateColumn.CellTemplate>
-                                </DataGridTemplateColumn>
-                            </DataGrid.Columns>
-                            </DataGrid>
-                        </Grid>
+                                            </DockPanel>
+                                        </StackPanel>
+                                    </Border>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+
+                        <StackPanel Margin="0 0 0 -10" Grid.Row="1" VerticalAlignment="Bottom" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button x:Name="prevPage" VerticalAlignment="Bottom" Style="{StaticResource RoundedButtonStyle}" Click="prevPage_Click" Width="220" Height="30">Предыдущая страница</Button>
+                            <TextBlock x:Name="pageText" Margin="10 0" VerticalAlignment="Center">Страница 1</TextBlock>
+                            <Button x:Name="nextPage" VerticalAlignment="Bottom" Style="{StaticResource RoundedButtonStyle}" Click="nextPage_Click" Width="220" Height="30">Следующая страница</Button>
+                        </StackPanel>
+                    </Grid>
                 </TabItem>
 
                 <TabItem Header="Профиль пользователя">
@@ -203,6 +182,7 @@
                         <Image Source="/Resources/Images/logout-icon.png" Width="24" Height="24"/>
                     </TabItem.Header>
                 </TabItem>
+
             </TabControl>
         </Border>
     </Grid>
